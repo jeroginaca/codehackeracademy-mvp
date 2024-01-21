@@ -25,7 +25,7 @@ const ResourceCard = ({ id, title, image, downloadNumber, slug, downloadLink}: P
             href={downloadLink}
             target="_blank"
         >
-          <CardHeader className="flex-center flex-col gap-2.5 !p-0">
+            <CardHeader className="flex-center flex-col gap-2.5 !p-0">
                 <div className="h-fit w-fit">
                     <Image 
                     src={image}
@@ -35,9 +35,11 @@ const ResourceCard = ({ id, title, image, downloadNumber, slug, downloadLink}: P
                     alt={title}
                     />
                 </div>
+
                 <CardTitle className="text-white paragraph-semibold line-clamp-1 w-full text-left">{title}</CardTitle>
             </CardHeader>
-            <CardContent className="flex-between mt-4 p-0">
+        </Link>
+        <CardContent className="flex-between mt-4 p-0">
                 <div className="flex-center body-medium gap-1.5 text-white">
                     <Image 
                        src="/downloads.svg"     
@@ -48,13 +50,13 @@ const ResourceCard = ({ id, title, image, downloadNumber, slug, downloadLink}: P
                     {downloadNumber}
                 </div>
                 <Link href={downloadLink} target="_blank" className="flex-center text-gradient_purple-blue body-semibold gap-1.5">
-   Download Now
-   <Image 
-       src="/arrow-blue.svg" width={13} height={10} alt="arrow"
-   />
-</Link>
-            </CardContent>
-        </Link>
+                Download Now
+                <Image 
+                    src="/arrow-blue.svg" width={13} height={10} alt="arrow"
+                />
+                </Link>
+        </CardContent>
+        
     </Card>
   )
 }

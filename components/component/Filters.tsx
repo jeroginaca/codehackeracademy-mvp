@@ -1,18 +1,19 @@
 "use client"
 
 import { formUrlQuery } from "@/sanity/utils";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
-
+import { useSearchParams, useRouter } from 'next/navigation'
 
 const links = ["all", "Next 13", "frontend", "backend", "fullstack"]
+
+
 
 const Filters = () => {
     const [active, setActive] = useState("");
     const searchParams = useSearchParams()
     const router = useRouter();
-
-    const handleFilter = (link: string) => {
+    
+   const handleFilter = (link: string) => {
 
         let newUrl = "";
         
@@ -36,6 +37,7 @@ const Filters = () => {
         router.push(newUrl, { scroll: false })
 
     }
+
 
   return (
     <ul className="text-white-800 body-text no-scrollbar flex w-full max-w-full gap-2 overflow-auto py-12 sm:max-w-2xl">
