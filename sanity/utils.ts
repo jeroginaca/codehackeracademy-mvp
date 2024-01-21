@@ -12,7 +12,6 @@ export interface Post {
   _createdAt: string;
 }
 
-
 interface BuildQueryParams {
   type: string;
   query: string;
