@@ -1,4 +1,3 @@
-import BlogNav from '@/components/BlogNav'
 import React from 'react'
 import { readClient } from '@/sanity/lib/client'
 import { Post } from '@/sanity/utils';
