@@ -3,9 +3,10 @@ import Image from "next/image"
 import { Input } from "./ui/input"
 
 import { useEffect, useState } from "react";
-import { formUrlQuery } from "@/sanity/utils";
+
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { formUrlQuery } from "@/sanity/utils";
 
 export const SearchForm = () => {
     const searchParams = useSearchParams();

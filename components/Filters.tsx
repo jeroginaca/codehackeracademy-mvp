@@ -1,8 +1,9 @@
 "use client"
 
-import { formUrlQuery } from "@/sanity/utils"; 
+import { formUrlQuery } from "@/sanity/utils";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
-import { useSearchParams, useRouter } from 'next/navigation'
+
 
 const links = ["all", "Next 13", "frontend", "backend", "fullstack"]
 
