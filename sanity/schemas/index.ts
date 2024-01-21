@@ -5,3 +5,4 @@ import post from "./post";
 const schemas = [resource, resourcePlaylist, post]
 
 export default schemas;
+
