@@ -1,5 +1,18 @@
 import qs from 'query-string'
 
+
+export interface Post {
+  title: string;
+  overview: string;
+  content: any;
+  _id: string;
+  slug: {
+      current: string;
+  };
+  _createdAt: string;
+}
+
+
 interface BuildQueryParams {
   type: string;
   query: string;
@@ -55,14 +68,3 @@ UrlQueryParams) {
   )
 }
 
-
-export interface Post {
-    title: string;
-    overview: string;
-    content: any;
-    _id: string;
-    slug: {
-        current: string;
-    };
-    _createdAt: string;
-}
